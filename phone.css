@@ -41,3 +41,10 @@
 .btn a {
   font-size: 12px;
 }
+.btn1 {
+  font-size: 15px;
+  margin-left: 12px;
+}
+.right {
+  right: 5px;
+}
