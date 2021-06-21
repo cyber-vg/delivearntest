@@ -1,0 +1,43 @@
+#navbar {
+  flex-direction: column;
+}
+#navbar ul li a {
+  font-size: 1rem;
+  padding: 0px 10px;
+}
+#home {
+  height: 400px;
+  padding: 3px 36px;
+}
+#home::before {
+  height: 500px;
+}
+#home::before {
+  height: 500px;
+  background: url("bg.jpg") no-repeat center center/120% 100%;
+}
+#home p {
+  font-size: 0.8rem;
+}
+
+#services {
+  flex-direction: column;
+}
+#sponsor {
+  flex-wrap: wrap;
+}
+#sponsor img {
+  width: 92px;
+  height: 50px;
+}
+/* utility classses */
+.pri-head {
+  font-size: 1.7rem;
+}
+.h-primary {
+  text-align: center;
+  font-size: 1.8rem;
+}
+.btn a {
+  font-size: 12px;
+}

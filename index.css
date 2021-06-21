@@ -1,0 +1,245 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+
+/* navigation bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  /* width: 100%; */
+  top: 0%;
+}
+.right {
+  position: absolute;
+  right: 70px;
+  top: 20px;
+
+  display: inline-block;
+}
+.btn1 {
+  border-radius: 10px;
+  padding: 2px;
+  font-size: 18px;
+  margin: 1px;
+  cursor: pointer;
+  margin-left: 90px;
+}
+.btn1 a {
+  text-decoration: none;
+  color: black;
+}
+.btn1:hover {
+  background-color: rgb(219, 121, 121);
+}
+/* logo and image  */
+
+#logo {
+  margin: -13px;
+  padding: 20px;
+}
+#logo img {
+  height: 50px;
+  border-radius: 66px;
+}
+/* list style */
+
+#navbar ul {
+  display: flex;
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+  font-family: cursive;
+}
+#navbar ul li a {
+  color: wheat;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+  opacity: 0.5;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: whitesmoke;
+}
+/* home */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  justify-content: center;
+  align-items: center;
+  height: 507px;
+}
+#home::before {
+  content: "";
+
+  position: absolute;
+
+  background: url("bg.jpg") no-repeat center center/100% 100%;
+  height: 594px;
+  top: 0%;
+
+  width: 100%;
+  z-index: -2;
+  opacity: 0.9;
+  top: 0%;
+  left: 0%;
+}
+#home p {
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+}
+/* services */
+#services {
+  margin: 30px;
+  display: flex;
+}
+#services .box {
+  border: 2px solid red;
+  border-radius: 23px;
+  margin: 2px;
+  padding: 8px;
+  background-color: rgb(187 171 171);
+}
+#services .box img {
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin: auto;
+  border-radius: 50px;
+}
+/* sponsor */
+#sponsor-sec {
+  height: 300px;
+  position: relative;
+}
+#sponsor-sec::before {
+  content: "";
+  background: url("sponsor.jpg");
+  position: absolute;
+  opacity: 0.6;
+  height: 237px;
+  width: 100%;
+  border-radius: 20px;
+  z-index: -2;
+}
+#sponsor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sponsor img {
+  height: 100px;
+}
+.sponsor-item {
+  padding: 25px;
+}
+
+/* utili classes */
+.pri-head {
+  font-family: cursive;
+  font-size: 3rem;
+}
+.h-primary {
+  font-family: cursive;
+  font-size: 3rem;
+  padding: 12px;
+}
+h-sec {
+  font-size: 2rem;
+  padding: 10px;
+}
+.btn {
+  margin: 9px;
+  padding: 4px 7px;
+  border: 2px solid brown;
+  border-radius: 19px;
+  color: black;
+  cursor: pointer;
+}
+.btn a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: rgb(207, 100, 100);
+}
+.centre {
+  text-align: center;
+}
+/* page contact us */
+#contactus {
+  border: 2px solid rgb(70, 64, 64);
+  padding: 20px;
+  border-radius: 15px;
+}
+#contactus h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+#contactus p {
+  text-align: left;
+  font-size: 1.8rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/* aboutus page */
+#about {
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(255, 213, 205, 0.589);
+}
+#about h1 {
+  font-family: cursive;
+  text-align: center;
+  margin: 15px;
+  font-size: 2.3rem;
+  text-decoration: underline;
+}
+#about p {
+  text-align: center;
+}
+/* WORK with us page */
+.glow {
+  font-size: 80px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #8370d8,
+      0 0 40px #8556dd, 0 0 50px #5727c9, 0 0 60px #2d4bd1, 0 0 70px #1846c4;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #fc419e, 0 0 60px #b93778, 0 0 70px #fa2b93, 0 0 80px #ff4da6;
+  }
+}
